@@ -15,9 +15,28 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String a[]) {
-        System.out.println(bytesToHex(PiDigits.getDigits(400, 100)));
-        System.out.println(bytesToHex(PiDigits.getDigits(400, 100, 9)));
-        System.out.println(bytesToHex(PiDigits.getDigits(0, 10, 10)));
+        /** 
+         * Prueba de rendimiento con un hilo
+         */
+        // System.out.println(bytesToHex(PiDigits.getDigits(0, 1000000, 1)));
+        /**
+         * Prueba de rendimiento con tantos hilos como nucleos del procesador
+         */
+        // System.out.println(bytesToHex(PiDigits.getDigits(0, 1000000, 4)));
+        /**
+         * Prueba de rendimiento con el doble de hilos como nucleos del procesador
+         */
+        // System.out.println(bytesToHex(PiDigits.getDigits(0, 1000000, 8)));
+        /**
+         * Prueba de rendimiento con 200 hilos como nucleos del procesador
+         */
+        // System.out.println(bytesToHex(PiDigits.getDigits(0, 1000000, 200)));
+        /**
+         * Prueba de rendimiento con 500 hilos como nucleos del procesador
+         */
+        System.out.println(bytesToHex(PiDigits.getDigits(0, 1000000, 500)));
+        
+        
 
     }
 
